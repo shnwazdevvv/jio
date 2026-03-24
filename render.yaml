@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: jiosaavn-bot
+    runtime: python
+    region: singapore   # closest to India; change to "ohio" or "frankfurt" if preferred
+    plan: free          # upgrade to "starter" for always-on (free plan spins down)
+    buildCommand: pip install -r requirements.txt
+    startCommand: python -m jiosaavn
+    healthCheckPath: /
+    envVars:
+      - key: API_ID
+        sync: false          # set manually in Render dashboard
+      - key: API_HASH
+        sync: false
+      - key: BOT_TOKEN
+        sync: false
+      - key: DATABASE_URL
+        sync: false          # MongoDB URI (optional but recommended)
+      - key: HOST
+        value: "0.0.0.0"
+      - key: PORT
+        value: "10000"       # Render assigns 10000 by default for web services
+      - key: RENDER_URL
+        sync: false          # paste your Render app URL here to keep it alive
+      - key: PING_INTERVAL
+        value: "600"         # ping every 10 min to prevent free-tier sleep
+      - key: PYTHON_VERSION
+        value: "3.12.3"

@@ -1,0 +1,12 @@
+motor
+uvloop
+aiofiles
+mutagen
+requests
+dnspython
+pyrofork
+python-dotenv
+humanfriendly
+python-dotenv
+tgcrypto-pyrofork
+aiohttp[speedups]
