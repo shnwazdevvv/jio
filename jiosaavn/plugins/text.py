@@ -22,16 +22,3 @@ class TEXT:
 **😊 Feel free to explore and enjoy the music!**
 </blockquote>
 """
-
-    ABOUT_MSG = """
-<blockquote>
-**🤖 Bot Name:** [🤖 {me.username}](https://t.me/{me.username})
-**📝 Language:** [Python 3](https://www.python.org/)
-**🧰 Framework:** [Pyrogram](https://t.me/iwantandroid)
-**👨‍💻 Developer:** [Shnwaz](https://t.me/SHNWAZX)
-**👑 Maintained By:** [RangoZex](https://t.me/iwantandroid)
-**📢 Updates Channel:** [NS Bots](https://t.me/iwantandroid)
-**👥 Support Group:** [AMC Support](https://t.me/iwantandroid)
-**🔗 Source Code:** [GitHub Repository](https://github.com/shnwazdevvv/jio)
-</blockquote>
-"""
